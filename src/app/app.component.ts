@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 
@@ -7,7 +8,9 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [
     RouterOutlet,
-    RouterModule
+    RouterModule,
+    FormsModule,//formularios de tipo plantilla
+    ReactiveFormsModule//formularios reactivos
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
